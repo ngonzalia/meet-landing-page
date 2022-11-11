@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap');
+
+* {
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+
+// colors
+$dark-blue: #28283D;
+$gray: #87879D;
+$white: #FAFAFA;
+
+
+// weights
+.w500 {
+  font-weight: 500;
+}
+.w900 {
+  font-weight: 900;
+}
+
+
+// alignment
+.center {
+  text-align: center;
+}
+.start-desktop {
+  @media (min-width: 1200px) {
+    text-align: start;
+  }
+}
+
+
+// mixins
+@mixin text {
+  font-size: 1rem;
+  line-height: 1.625rem;
+}
+@mixin subtitle {
+  font-size: 2rem;
+  line-height: 2.25rem;
+  @media (min-width: 768px) {
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+  }
+}
+
+
+// main section
+.main-title {
+  font-size: 2.5rem;
+  line-height: 2.75rem;
+  color: $dark-blue;
+  // tablet
+  @media (min-width: 768px) {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  // desktop
+  @media (min-width: 1200px) {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+}
+
+
+// info section
+.underline {
+  @include text;
+  letter-spacing: .25rem;
+  color: #4D96A9;
+  text-transform: uppercase;
+}
+.info-title {
+  @include subtitle;
+  color: $dark-blue;
+}
+
+
+// text for main, info section and number separator
+.text {
+  @include text;
+  color: $gray;
+  // desktop
+  @media (min-width: 1200px) {
+    font-size: 1.125rem;
+  }
+}
+
+
+// footer
+.footer-title {
+  @include subtitle;
+  color: $white;
+}
+.footer-text {
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+  color: $white;
+}
+
+
+// buttons text
+.btn-text {
+  @extend .text;
+  color: white;
+  // desktop
+  @media (min-width: 1200px) {
+    font-size: 1rem !important;
+  }
+
+  &-cyan {
+    color: #8FE3F9;
+  }
+  &-violet {
+    color: #D9B8FF;
+  }
+}

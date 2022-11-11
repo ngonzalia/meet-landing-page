@@ -1,0 +1,33 @@
+.btn {
+  height: 3.625rem;
+  border-radius: 1.813rem;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .25rem;
+  cursor: pointer;
+  transition: .4s;
+
+  // sizes
+  &-md {
+    width: 8.688rem;
+  }
+  &-lg {
+    width: 12.063rem;
+  }
+
+  // colors
+  &-cyan {
+    background: #4D96A9;
+    &:hover {
+      background: #71C0D4;
+    }
+  }
+  &-violet {
+    background: #855FB1;
+    &:hover {
+      background: #B18BDD;
+    }
+  }
+}

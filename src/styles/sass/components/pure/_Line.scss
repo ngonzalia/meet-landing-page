@@ -1,0 +1,21 @@
+.line {
+  &-line {
+    height: 5.25rem;
+    width: .063rem;
+    opacity: .25;
+    border: .063rem solid #87879D;
+    background: #87879D;
+    margin: 0 auto;
+  }
+  &-number {
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 1.813rem;
+    border: .063rem solid rgba(135, 135, 157, .25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background: white;
+  }
+}

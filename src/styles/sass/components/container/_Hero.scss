@@ -1,0 +1,121 @@
+.hero {
+  padding-top: 3rem;
+  position: relative;
+  // desktop
+  @media (min-width: 1200px) {
+    padding-top: 5rem;
+  }
+
+
+  &-logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  &-image {
+    background: url('../assets/tablet/image-hero.png');
+    background-size: cover;
+    position: absolute;
+    top: 8.125rem;
+    left: 50%;
+    transform: translate(-50%);
+    height: 9.563rem;
+    width: 25.875rem;
+    // tablet
+    @media (min-width: 768px) {
+      height: 18.938rem;
+      width: 51.25rem;
+    }
+    // desktop
+    @media (min-width: 1200px) {
+      background: url('../assets/desktop/image-hero-left.png');
+      width: 24.625rem;
+      top: 10.563rem;
+      left: -2rem;
+      transform: none;
+    }
+    // desktop xxl
+    @media (min-width: 1920px) {
+      left: 4rem;
+    }
+  }
+  &-image-right {
+    // desktop
+    @media (min-width: 1200px) {
+      background: url('../assets/desktop/image-hero-right.png');
+      position: absolute;
+      top: 10.563rem;
+      right: -2rem;
+      height: 18.938rem;
+      width: 24.625rem;
+    }
+    // desktop xxl
+    @media (min-width: 1920px) {
+      right: 4rem;
+    }
+  }
+
+
+  &-content {
+    margin: 0 auto;
+    margin-top: 15.938rem;
+    width: 20.438rem;
+    // tablet
+    @media (min-width: 768px) {
+      margin-top: 27.438rem;
+      width: 28.563rem;
+    }
+    // desktop
+    @media (min-width: 1200px) {
+      margin-top: 6.75rem;
+    }
+    // desktop xl
+    @media (min-width: 1440px) {
+      width: 33.75rem;
+    }
+    // desktop xxl
+    @media (min-width: 1920px) {
+      width: 37.5rem;
+    }
+  }
+
+
+  &-title {
+    padding-inline: 2rem;
+    // tablet
+    @media (min-width: 768px) {
+      padding-inline: 4rem;
+    }
+  }
+
+
+  &-text {
+    margin-top: 1.5rem;
+    // desktop
+    @media (min-width: 1200px) {
+      margin-top: 2.125rem;
+    }
+  }
+
+
+  &-buttons {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    // tablet
+    @media (min-width: 768px) {
+      flex-direction: row;
+      gap: 1rem;
+    }
+    // desktop
+    @media (min-width: 1200px) {
+      margin-top: 2rem;
+    }
+  }
+}
